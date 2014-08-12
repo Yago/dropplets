@@ -1,29 +1,22 @@
 <article class="<?php echo($post_status); ?>">
     <div class="row">
-        <div class="one-quarter meta">
-            <div class="thumbnail">
-                <img src="<?php echo($post_image); ?>" alt="<?php echo($post_title); ?>" />
-            </div>
+        <div class="col-sm-8 col-sm-offset-2">
 
-            <ul>
-                <li>Written by <?php echo($post_author); ?></li>
-                <li><?php echo($published_date); ?></li>
-                <li>About <a href="<?php echo($post_category_link); ?>"><?php echo($post_category); ?></a></li>
-                <li></li>
-            </ul>
-        </div>
-
-        <div class="three-quarters post">
             <h2><a href="<?php echo($post_link); ?>"><?php echo($post_title); ?></a></h2>
 
-            <?php echo($post_intro); ?>
+            <small><?php echo($published_date); ?> in <a href="<?php echo($post_category_link); ?>"><?php echo($post_category); ?></a> </small>
 
-            <ul class="actions">
-                <li><a class="button" href="<?php echo($post_link); ?>">Continue Reading</a></li>
-                <?php if ($category) { ?>
-                <li><a class="button" href="<?php echo($blog_url); ?>">More Articles</a></li>
-                <?php } ?>
-            </ul>
+            <p>
+                <?php echo strtr(substr($post_content,0,200), array(
+                    '<strong>'=>'', '</strong>'=>'', '<em>'=>'', '</em>'=>'', '<b>'=>'', '</b>'=>'', '<i>'=>'', '</i>'=>'', '<h2>'=>'', '</h2>'=>'', '<h3>'=>'', '</h3>'=>''
+                )); ?>...
+            </p>
+
+            <p>
+                <a class="btn btn-default" href="<?php echo($post_link); ?>">Continue Reading</a>
+            </p>
+
+            <hr>
         </div>
     </div>
 </article>

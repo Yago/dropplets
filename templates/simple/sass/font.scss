@@ -2,6 +2,7 @@ body {
   font-family: $text;
   font-size: 19px;
   line-height: 1.6em;
+  color: $mine;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -9,6 +10,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.1em;
   margin: 1.6em 0 0.4em 0;
+  a {
+    color: $mine;
+    text-decoration: none;
+    &:hover {
+      color: $water;
+      text-decoration: none;
+    }
+  }
 }
 
 h1 {
@@ -16,3 +25,8 @@ h1 {
   font-size: 50px;
   @media only screen and (max-width: 767px) {font-size: 35px;}
 }
+
+p {
+  margin: 1em 0;
+}
+

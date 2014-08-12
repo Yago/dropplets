@@ -18,37 +18,18 @@
     </head>
 
     <body>
-        <?php if($is_home) { ?>
-        <article>
-            <div class="row">
-                <div class="one-quarter meta">
-                    <div class="thumbnail">
-                        <img src="<?php echo get_twitter_profile_img($blog_twitter); ?>" alt="profile" />
-                    </div>
+        <div class="container">
+
+            <?php if($is_home): ?>
+                <h1 class="text-center">Yago's notes</h1>
+            <?php endif ?>
         
-                    <ul>
-                        <li><?php echo($blog_title); ?></li>
-                        <li><a href="mailto:<?php echo($blog_email); ?>?subject=Hello"><?php echo($blog_email); ?></a></li>
-                        <li><a href="http://twitter.com/<?php echo($blog_twitter); ?>">&#64;<?php echo($blog_twitter); ?></a></li>
-                        <li></li>
-                    </ul>
-                </div>
-        
-                <div class="three-quarters post">
-                    <h2><?php echo($intro_title); ?></h2>
-        
-                    <p><?php echo($intro_text); ?></p>
-        
-                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                </div>
-            </div>
-        </article>
-        <?php } ?>
-        
-        <?php echo($content); ?>
-        
-        <br><br><br>
-        <?php get_footer(); ?>
+            <?php echo($content); ?>
+            
+            <br><br><br>
+            <?php get_footer(); ?>
+
+        </div>
 
         <script src="<?php echo($template_dir_url); ?>js/rainbow.js"></script>
         <script src='//192.168.0.14:3000/socket.io/socket.io.js'></script>

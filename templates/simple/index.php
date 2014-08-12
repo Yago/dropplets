@@ -9,8 +9,9 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <link rel="stylesheet" href="<?php echo($template_dir_url); ?>style.css">
-        <link rel="stylesheet" href="<?php echo($template_dir_url); ?>subdiv.css">
+        <link rel="stylesheet" href="<?php echo($template_dir_url); ?>css/style.css">
+        <link rel="stylesheet" href="<?php echo($template_dir_url); ?>css/subdiv.css">
+        <link rel="stylesheet" href="<?php echo($template_dir_url); ?>css/dropplets.css">
         <link href='//fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
         <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
         
@@ -48,5 +49,10 @@
         <?php echo($content); ?>
         
         <?php get_footer(); ?>
+
+        <script src="<?php echo($template_dir_url); ?>js/rainbow.js"></script>
+        <script src='//192.168.0.14:3000/socket.io/socket.io.js'></script>
+<script>var ___socket___ = io.connect('http://192.168.0.14:3000');</script>
+<script src='//192.168.0.14:3001/client/browser-sync-client.0.7.4.js'></script>
     </body>
 </html>

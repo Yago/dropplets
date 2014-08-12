@@ -22,3 +22,5 @@ posts/*
 cache/*.png
 cache/*.jpeg
 cache/*.jpg
+
+.sass-cache

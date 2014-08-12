@@ -435,7 +435,7 @@ function get_footer() { ?>
     <?php } ?>
     
     <!-- Dropplets Tools -->
-    <?php include('./dropplets/tools.php'); ?>
+    <?php //include('./dropplets/tools.php'); ?>
     
     <!-- User Footer Injection -->
     <?php echo FOOTER_INJECT; ?>

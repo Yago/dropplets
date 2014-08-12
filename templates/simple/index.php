@@ -9,8 +9,7 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <link rel="stylesheet" href="<?php echo($template_dir_url); ?>css/style.css">
-        <link rel="stylesheet" href="<?php echo($template_dir_url); ?>css/subdiv.css">
+        <link rel="stylesheet" href="<?php echo($template_dir_url); ?>css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php echo($template_dir_url); ?>css/dropplets.css">
         <link href='//fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
         <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
@@ -48,6 +47,7 @@
         
         <?php echo($content); ?>
         
+        <br><br><br>
         <?php get_footer(); ?>
 
         <script src="<?php echo($template_dir_url); ?>js/rainbow.js"></script>

@@ -131,3 +131,12 @@ pre .support, *[data-language="c"] .function.call {
 pre .variable.global, pre .variable.class, pre .variable.instance {
     color: #A6E22E;
 }
+
+.close {
+  float: none !important;
+  font-size: 18px !important;
+  font-weight: normal !important;
+  color: #fff !important;
+  opacity: 1 !important;
+  text-shadow: 0 0 0 #000 !important;
+}

@@ -13,8 +13,12 @@ $transparentBlack:              rgba(0, 0, 0, 0.7);
 
 $fire:                          #e67e22;
 
-$title:                         'museo-sans', Helvetica, sans-serif;
-$text:                          'ff-tisa-web-pro', Georgia, serif;
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
+
+$title:                         'Montserrat', Helvetica, sans-serif;
+$text:                          'Merriweather', Georgia, serif;
 
 @import 'code';
+@import 'font';
 

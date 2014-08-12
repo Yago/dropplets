@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
 @font-face {
   font-family: 'Syntax';
@@ -100,3 +102,29 @@ pre .support, *[data-language="c"] .function.call {
 
 pre .variable.global, pre .variable.class, pre .variable.instance {
   color: #A6E22E; }
+
+.close {
+  float: none !important;
+  font-size: 18px !important;
+  font-weight: normal !important;
+  color: #fff !important;
+  opacity: 1 !important;
+  text-shadow: 0 0 0 #000 !important; }
+
+body {
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 19px;
+  line-height: 1.6em; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1.1em;
+  margin: 1.6em 0 0.4em 0; }
+
+h1 {
+  text-transform: uppercase;
+  font-size: 50px; }
+  @media only screen and (max-width: 767px) {
+    h1 {
+      font-size: 35px; } }

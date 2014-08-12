@@ -134,3 +134,9 @@ img {
   height: auto;
   box-sizing: border-box;
   margin: 1.5em 0; }
+
+hr {
+  border: none;
+  height: 1px;
+  background: #dedede;
+  margin: 50px 0; }

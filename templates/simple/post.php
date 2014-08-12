@@ -9,8 +9,19 @@
 
                 <?php echo($post_content); ?>
                 
-                <br>
-                <a class="btn btn-default pull-right" href="<?php echo($blog_url); ?>">More Articles</a>
+                <hr>
+
+                <div id="disqus_thread"></div>
+                    <script type="text/javascript">
+                        var disqus_shortname = 'yagosnotes'; // required: replace example with your forum shortname
+
+                        /* * * DON'T EDIT BELOW THIS LINE * * */
+                        (function() {
+                            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                        })();
+                    </script>
             </div>
         </div>
     </article>

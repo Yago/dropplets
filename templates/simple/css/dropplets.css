@@ -139,6 +139,18 @@ h1 {
 p {
   margin: 1em 0; }
 
+.cover-image {
+  width: 100%;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center center; }
+  @media only screen and (max-width: 979px) {
+    .cover-image {
+      min-height: 350px; } }
+  @media only screen and (max-width: 767px) {
+    .cover-image {
+      min-height: 200px; } }
+
 img {
   max-width: 100%;
   height: auto;

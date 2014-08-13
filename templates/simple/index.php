@@ -18,7 +18,6 @@
     </head>
 
     <body>
-        <div class="container">
 
             <?php if($is_home): ?>
                 <h1 class="text-center">Yago's notes</h1>
@@ -28,8 +27,6 @@
             
             <br><br><br>
             <?php get_footer(); ?>
-
-        </div>
 
         <script src="<?php echo($template_dir_url); ?>js/rainbow.js"></script>
         <script src='//192.168.0.14:3000/socket.io/socket.io.js'></script>
